@@ -12,5 +12,5 @@ function totalTextLength() {
 }
 
 function remainingCounterLength() {
-  remainEl.innerText = 50 - textEl.value.length;
+  remainEl.innerText = textEl.getAttribute("maxlength") - textEl.value.length;
 }
